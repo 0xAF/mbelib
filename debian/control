@@ -1,0 +1,42 @@
+Source: libmbe
+Section: libs
+Priority: optional
+Maintainer: Stanislav Lechev <af@0xAF.org>
+Build-Depends: debhelper (>=9), cmake
+Standards-Version: 4.1.4
+Homepage: https://github.com/0xAF/mbelib
+Vcs-Git: https://github.com/0xAF/mbelib.git
+Vcs-Browser: https://github.com/0xAF/mbelib
+
+Package: libmbe-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libmbe1 (= ${binary:Version}), ${misc:Depends}
+Description: P25 Phase 1 and ProVoice vocoder - development kit
+ libMBE supports the 7200x4400 bit/s codec used in P25 Phase 1,
+ the 7100x4400 bit/s codec used in ProVoice and the "Half Rate"
+ 3600x2250 bit/s vocoder used in various radio systems.
+ .
+ Original code by Jared Szechy https://github.com/szechyjs/mbelib
+ Added AMBE+2 Tones and Single Freq Tone for DSTAR from Florida Man.
+ https://github.com/lwvmobile/mbelib/tree/ambe_tones
+ .
+ This package contains the development files for libmbe.
+
+Package: libmbe1
+Section: libs
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: P25 Phase 1 and ProVoice vocoder - runtime library
+ libMBE supports the 7200x4400 bit/s codec used in P25 Phase 1,
+ the 7100x4400 bit/s codec used in ProVoice and the "Half Rate"
+ 3600x2250 bit/s vocoder used in various radio systems.
+ .
+ Original code by Jared Szechy https://github.com/szechyjs/mbelib
+ Added AMBE+2 Tones and Single Freq Tone for DSTAR from Florida Man.
+ https://github.com/lwvmobile/mbelib/tree/ambe_tones
+ .
+ This package contains the libmbe library used by applications.

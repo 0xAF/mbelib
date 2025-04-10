@@ -1,0 +1,12 @@
+libmbe (1.3.4) unstable; urgency=medium
+
+  * Added AMBE+2 Tones and Single Freq Tone for DSTAR from Florida Man.
+  * Added debian packaging. (AF)
+
+ -- Stanislav Lechev <af@0xAF.org>  Wed, 9 Apr 2025 21:30:00 +0200
+
+libmbe (1.3.0) bionic; urgency=low
+
+  * Initial upload!
+
+ -- Jared Szechy <jared.szechy@gmail.com>  Wed, 27 Jun 2018 23:00:00 -0400
